@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Frontend Assignment - Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an Admin Dashboard designed to display book records in a tabular format. The data is fetched from the Open Library API and includes various features such as pagination, sorting, and additional brownie point features. The dashboard is built using ReactJS and leverages component libraries for enhanced UI/UX.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
+- **Data Fetching** : Book records are populated from the Open Library API.
+- **Columns** : The table includes the following columns:
+   - Ratings Average
+   - Author Name
+   - Title
+   - First Publish Year
+   - Subject
+   - Author Birth Date
+   - Author Top Work
+- **Pagination**: 
+   - Default view shows 10 books per page.
+   - Users can change the view to display 50 or 100 records per page.
+- **Sorting**: Users can sort columns in ascending or descending order.
+- **Additional Features**:
+   - **Support for editing a row entry**:
+     - Click the edit button next to the row you wish to edit.
+     - A modal or inline form will appear allowing you to update the row data.
+   - **Search books by author**:
+     - Use the search bar at the top of the table to filter books by author name.
+     - The table will dynamically update to show matching records.
+   - **Download the current results in a CSV file**:
+     - Click the download button to get the current table data in CSV format.
+     - The CSV file will include all visible records and columns.
+   - **Hosting the dashboard online**:
+     - Hosted the dashboard using platform like Vercel.
+     - URL is accessible and the dashboard is fully functional online.
 
-### `npm start`
+## Technology Stack
+- **Front End**: ReactJS
+- **Component Library**: Any suitable library (e.g., Material-UI, Ant Design)
+- **API**: Open Library API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/sarthakkurothe/nua-frontend-assignment
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd nua-frontend-assignment-main
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API Reference
+Open Library API documentation can be found [here](https://openlibrary.org/developers/api).
 
-### `npm test`
+## Usage
+- Open your browser and go to `http://localhost:3000`.
+- View the table with book records.
+- Use pagination controls to navigate through pages.
+- Click on column headers to sort the data.
+- Use the search bar to find books by author.
+- Edit entries by clicking on the edit button next to each row.
+- Download the table data in CSV format using the download button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Brownie Points
+- **Editing a Row Entry**: Click the edit button next to the row you wish to edit.
+- **Search Books by Author**: Use the search bar at the top of the table to filter books by author name.
+- **Download CSV**: Click the download button to get the current table data in CSV format.
+- **Hosting**: Hosted the dashboard using platforms like Vercel.
 
-### `npm run build`
+## Contributing
+- Fork the repository.
+- Create a new branch (`git checkout -b feature-branch`).
+- Make your changes.
+- Commit your changes (`git commit -m 'Add some feature'`).
+- Push to the branch (`git push origin feature-branch`).
+- Create a new Pull Request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contact
+For any questions or feedback, please open an issue on the GitHub repository or contact me at [reachsarthakkurothe@gmail.com].
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Thank you for using this Admin Dashboard!
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
