@@ -1,0 +1,123 @@
+.book-table {
+    width: calc(100% - 40px);
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.book-table th,
+.book-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.book-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.book-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.book-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+input[type="text"] {
+    width: calc(80% - 40px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+button {
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #ccc;
+}
+
+button.edit-btn {
+    background-color: #6c5ac4;
+}
+
+button.edit-btn:hover {
+    background-color: #ff8c00;
+}
+
+button.save-btn {
+    background-color: #6c5ac4;
+}
+
+button.save-btn:hover {
+    background-color: #ff8c00;
+}
+
+button.csv-btn {
+    background-color: #9c51aa;
+}
+
+button.csv-btn:hover {
+    background-color: #1e87f0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.pagination select {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.loading-spinner {
+    border: 12px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #d11580;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
