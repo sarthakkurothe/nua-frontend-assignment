@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 
-.book-table tr:nth-child(even) {
+.book-table tr {
     background-color: #f9f9f9;
 }
 
